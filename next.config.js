@@ -1,6 +1,5 @@
 module.exports = {
-  reactStrictMode: true,
-  async rewrite() {
+  async rewrites() {
     return [
       {
         source: '/:any*',
