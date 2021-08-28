@@ -17,11 +17,11 @@ const Layout = ({ children }) => {
       <div className="fixed lg:hidden right-2 p-2 rounded-full bg-yellow-400 w-12 h-12 flex justify-center items-center text-center" onClick={() => setPanel(true)} >
         <FontAwesomeIcon icon={faUserAlt} color='white' />
       </div>
-      <div className={`${panel ? 'right-0 opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none -right-full lg:right-0 lg:opacity-100'} bg-white p-4 shadow-lg border border-gray-200 lg:w-96 w-full lg:rounded-lg fixed lg:relative h-screen top-0 z-50 transition-all duration-300`}>
+      <div className={`${panel ? 'right-0 opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none -right-full lg:right-0 lg:opacity-100'} bg-white p-4 shadow-lg border border-gray-200 lg:w-96 w-full lg:rounded-lg fixed lg:relative h-screen top-0 z-50 lg:z-0 transition-all duration-300`}>
         <div className="lg:hidden bg-green-400 text-white w-7 h-7 flex justify-center items-center rounded-full mb-5">
           <FontAwesomeIcon icon={faTimes} onClick={() => setPanel(false)} />
         </div>
-        <p className="font-bold">Member Aktif 2</p>
+        <p className="font-bold">Member Aktif 3</p>
         <Gap height={10} />
         <div className="flex items-center">
           <div className="w-12 h-12 rounded-full bg-gray-200 relative overflow-hidden">
